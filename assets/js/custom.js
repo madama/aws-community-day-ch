@@ -215,9 +215,9 @@
     //Sponsor two
     var swiper = new Swiper('.sponsor-slider-two', {
         slidesPerView: 4,
-        spaceBetween: 15,
+        spaceBetween: 50,
         autoplay: 1500,
-        loop: true,
+        loop: false,
         breakpoints: {
             // when window width is <= 320px
             540: {

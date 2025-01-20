@@ -2168,6 +2168,50 @@ nav.main-menu.menu-six.menu-fixed.dark-home-defult.menu-six-bg {
     margin: 0px;
 }
 
+
+/* - Organizers
+----------------------------------------------*/
+.speakers .organizer-item {
+    overflow: hidden;
+    margin-bottom: 30px;
+    box-sizing: content-box;
+    padding: 40px;
+    box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.08);
+    position: relative;
+    text-transform: none;
+}
+
+.speakers .organizer-item img {
+    width: 90px;
+    border-radius: 10px;
+    border: 6px solid #fff;
+    float: left;
+    margin: 0 10px 0 0;
+    vertical-align: middle;
+}
+
+.speakers .organizer-item h3 {
+    clear: none;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 0 5px 0;
+    color: #232f3e;
+    text-transform: none;
+}
+
+.speakers .organizer-item h4 {
+    clear: none;
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0;
+    color: #999;
+    text-transform: none;
+}
+
+.speakers .organizer-socials a {
+    color: #428bca;
+}
+
 /*  05  - Speakers
 ----------------------------------------------*/
 .speakers {

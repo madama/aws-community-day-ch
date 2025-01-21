@@ -20,8 +20,13 @@ jobs:
         aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
         aws-region: eu-central-1
 
+    - name: Extract branch name
+      shell: bash
+      run: echo "branch=${GITHUB_HEAD_REF:-${GITHUB_REF#refs/heads/}}" >> $GITHUB_OUTPUT
+      id: extract_branch
+  
     - name: Build
-      run:  cp -fr editions dist
+      run: cp -fr editions dist
     
     - name: Deploy Staging
       if: ${{ steps.extract_branch.outputs.branch == 'master' }}

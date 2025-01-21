@@ -4,6 +4,7 @@ on:
   push:
     branches:
     - master
+    - production
 
 jobs:
   deploy:
@@ -19,5 +20,13 @@ jobs:
         aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
         aws-region: eu-central-1
 
-    - name: Deploy static site to S3 bucket
-      run: aws s3 sync . s3://madama.ch --delete --exclude ".git/*" --exclude ".github/*" --exclude README.md --acl public-read --cache-control max-age=600
+    - name: Build
+      run:  cp -fr editions dist
+    
+    - name: Deploy Staging
+      if: ${{ steps.extract_branch.outputs.branch == 'master' }}
+      run: aws s3 sync dist/. s3://madama.ch --delete --acl public-read --cache-control max-age=600
+
+    - name: Deploy Production
+      if: ${{ steps.extract_branch.outputs.branch == 'production' }}
+      run: aws s3 sync dist/. s3://www.awsug.ch --delete --acl public-read --cache-control max-age=600

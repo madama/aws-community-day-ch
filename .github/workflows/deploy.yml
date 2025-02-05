@@ -44,4 +44,4 @@ jobs:
 
     - name: Deploy Production
       if: ${{ steps.extract_branch.outputs.branch == 'production' }}
-      run: aws s3 sync dist/. s3://awsug-website --delete --cache-control max-age=600
+      run: aws s3 sync dist/. s3://aws-community-day-ch --delete --acl public-read --cache-control max-age=600

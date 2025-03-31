@@ -40,7 +40,7 @@ jobs:
     
     - name: Deploy Staging
       if: ${{ steps.extract_branch.outputs.branch == 'master' }}
-      run: aws s3 sync dist/. s3://madama.ch --delete --acl public-read --cache-control max-age=600
+      run: echo "SKIPPED" #aws s3 sync dist/. s3://madama.ch --delete --acl public-read --cache-control max-age=600
 
     - name: Deploy Production
       if: ${{ steps.extract_branch.outputs.branch == 'production' }}

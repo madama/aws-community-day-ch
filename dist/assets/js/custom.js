@@ -199,7 +199,7 @@
         slidesPerView: 3,
         spaceBetween: 30,
         autoplay: 2000,
-        loop: true,
+        loop: false,
         breakpoints: {
             // when window width is <= 320px
             540: {
@@ -239,7 +239,7 @@
         slidesPerView: 5,
         spaceBetween: 15,
         autoplay: 1000,
-        loop: true,
+        loop: false,
         breakpoints: {
             // when window width is <= 320px
             540: {

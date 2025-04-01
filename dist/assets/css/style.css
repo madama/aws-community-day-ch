@@ -2262,10 +2262,11 @@ nav.main-menu.menu-six.menu-fixed.dark-home-defult.menu-six-bg {
     height: 4.6em;
     float: left;
     background-color: #ff9900;
-    padding: 15px 15px 7px;
+    padding: 7px;
     -webkit-transition: .25s;
     -moz-transition: .25s;
     transition: .25s;
+    align-content: center;
 }
 
 .speakers .speaker-item .speaker-content .details h4 a {
@@ -2517,8 +2518,8 @@ nav.main-menu.menu-six.menu-fixed.dark-home-defult.menu-six-bg {
 
 .speakers-seven .speaker-image {
     position: relative;
-    height: 300px;
-    width: 300px;
+    /* height: 300px;
+    width: 300px; */
     overflow: hidden;
     border-radius: 100%;
     margin: 0 auto 30px;

@@ -257,8 +257,8 @@
 		width: 15%;
 	}
 	.speakers .speaker-item .speaker-content .details{
-		width: 85%;
-	    padding: 15px 4px 7px;
+		/* width: 85%; */
+	  padding: 15px 4px 7px;
 	}
 	.speakers-three .speaker-item .speaker-content h4{
 		font-size: 18px;
@@ -266,10 +266,10 @@
 	.speaker-details .speaker-skills .skill-item{
 		margin-right: 12px;
 	}
-	.speakers-seven .speaker-image{
+	/* .speakers-seven .speaker-image{
 		height: 290px;
 		width: 290px;
-	}
+	} */
 	.pricing-three .pricing-item .pricing-header .amount{
 		font-size: 56px;
     	line-height: 3.05;

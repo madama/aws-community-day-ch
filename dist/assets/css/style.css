@@ -3888,6 +3888,48 @@ nav.main-menu.menu-six.menu-fixed.dark-home-defult.menu-six-bg {
     color: #fff;
 }
 
+/* 10.1 - Logo Grid
+----------------------------------------------*/
+
+.logo-grid {
+    display: flex;
+    gap: 20px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.logo-grid div {
+    align-content: center;
+}
+
+.logo-item {
+    object-fit: contain;
+    justify-content: center;
+    padding: 15px;
+}
+
+.logo-item-base img {
+    width: 200px;
+    
+}
+
+.logo-item-gold img {
+    width: 300px;
+}
+
+.logo-item-platinum img {
+    width: 375;
+}
+
+@media (max-width: 600px) {
+    .logo-item {
+        flex: 1 1 100%;
+        max-width: 100%;
+        object-fit: contain;
+    }
+}
+
 /*  11  - Gallery
 ----------------------------------------------*/
 .gallery {

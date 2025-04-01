@@ -2257,9 +2257,11 @@ nav.main-menu.menu-six.menu-fixed.dark-home-defult.menu-six-bg {
 }
 
 .speakers .speaker-item .speaker-content .details {
-    width: 77%;
+    /*width: 77%;*/
+    width: 100%;
+    height: 4.6em;
     float: left;
-    background-color: #65ac4c;
+    background-color: #ff9900;
     padding: 15px 15px 7px;
     -webkit-transition: .25s;
     -moz-transition: .25s;
@@ -3886,6 +3888,48 @@ nav.main-menu.menu-six.menu-fixed.dark-home-defult.menu-six-bg {
 .sponsor-seven .sponsor-button:focus {
     background-color: #e84b3a;
     color: #fff;
+}
+
+/* 10.1 - Logo Grid
+----------------------------------------------*/
+
+.logo-grid {
+    display: flex;
+    gap: 20px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.logo-grid div {
+    align-content: center;
+}
+
+.logo-item {
+    object-fit: contain;
+    justify-content: center;
+    padding: 15px;
+}
+
+.logo-item-base img {
+    width: 200px;
+    
+}
+
+.logo-item-gold img {
+    width: 300px;
+}
+
+.logo-item-platinum img {
+    width: 375;
+}
+
+@media (max-width: 600px) {
+    .logo-item {
+        flex: 1 1 100%;
+        max-width: 100%;
+        object-fit: contain;
+    }
 }
 
 /*  11  - Gallery
